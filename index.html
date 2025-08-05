@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="A 4D panorama video generation pipeline based on the given prompts and motion conditions.">
+
+    <title>360Explorer: Exploring 4D Controllable World in Panoramic Videos</title>
+    <link rel="icon" href="./static/images/page.svg">
+
+    <!-- reset css  -->
+    <link href="./static/css/reset.css" rel="stylesheet" />
+
+    <link href="./static/css/index.css" rel="stylesheet" />
+
+    <script src="./static/js/index.js" defer></script>
+
+    <script src="./static/js/aframe.min.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="center">360Explorer: Exploring 4D Controllable World in Panoramic Videos
+            Model</h1>
+
+        <div class="center">
+            <p>Anonymous AAAI submission</p>
+            <p>Paper ID 9774</p>
+        </div>
+
+        <br>
+        <div class="center" style="font-size: 16px;">
+        We highlight that the page opened locally cannot preview panoramic videos in VR mode, 
+        <br>
+        so we strongly recommend that you open the online anonymous page to preview panoramic videos:
+        <br>
+        <a href="https://360explorer.github.io" style="color: #ff0000;">https://360explorer.github.io</a>
+        </div>
+        
+
+    </header>
+
+    <hr />
+
+    <section>
+        <h2>Comparison with Panoramic Methods</h2>
+        <div class="scroll-area" style="overflow-x: auto;">
+            <div class="show prompt-guided">
+                <div class="center">
+                    <b>Genex</b>
+                </div>
+                <div class="center">
+                    <b>OmniDrag</b>
+                </div>
+                <div class="center">
+                    <b>Ours</b>
+                </div>
+
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/p1genex.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/p1omnidrag.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/p1ours.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/p2genex.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/p2omnidrag.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/p2ours.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Comparison with Panoramic Methods</h2>
+        <div class="scroll-area" style="overflow-x: auto;">
+            <div class="show prompt-guided">
+                <div class="center">
+                    <b>Input</b>
+                </div>
+                <div class="center">
+                    <b>VACE</b>
+                </div>
+                <div class="center">
+                    <b>TrajectoryCrafter</b>
+                </div>
+
+
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/1input.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/1vace.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/1tc.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="center">
+                    
+                </div>
+                <div class="center">
+                    <b>DaS</b>
+                </div>
+                <div class="center">
+                    <b>Ours</b>
+                </div>
+
+                <div class="center">
+                    
+                </div>
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/1das.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/1ours.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="center">
+                    <b>Input</b>
+                </div>
+                <div class="center">
+                    <b>VACE</b>
+                </div>
+                <div class="center">
+                    <b>TrajectoryCrafter</b>
+                </div>
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/2input.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/2vace.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/2tc.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="center">
+                    
+                </div>
+                <div class="center">
+                    <b>DaS</b>
+                </div>
+                <div class="center">
+                    <b>Ours</b>
+                </div>
+
+                <div class="center">
+                    
+                </div>
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/2das.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/2ours.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+
+                <div class="center">
+                    <b>Input</b>
+                </div>
+                <div class="center">
+                    <b>VACE</b>
+                </div>
+                <div class="center">
+                    <b>TrajectoryCrafter</b>
+                </div>
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/3input.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/3vace.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/3tc.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="center">
+                    
+                </div>
+                <div class="center">
+                    <b>DaS</b>
+                </div>
+                <div class="center">
+                    <b>Ours</b>
+                </div>
+
+                <div class="center">
+                    
+                </div>
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/3das.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video">
+                    <video playsinline autoplay loop muted>
+                        <source data-src="./static/videos/3ours.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
